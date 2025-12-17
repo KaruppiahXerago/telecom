@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - TelecomPro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --primary-red: #e50914; --dark-red: #b20710; }
+        .navbar { background: var(--primary-red) !important; }
+        .hero-services { background: linear-gradient(135deg, var(--primary-red), var(--dark-red)); color: white; }
+        .pricing-card { border: 2px solid #eee; transition: all 0.3s; }
+        .pricing-card:hover, .pricing-card.featured { border-color: var(--primary-red); transform: translateY(-10px); box-shadow: 0 20px 40px rgba(229,9,20,0.2); }
+        .pricing-card.featured { border-color: var(--primary-red); }
+        footer { background: var(--dark-red); }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html"><i class="fas fa-signal me-2"></i>TelecomPro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-services py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Our Services</h1>
+            <p class="lead fs-4">Comprehensive telecom solutions for businesses of all sizes</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 pricing-card">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="mb-0"><i class="fas fa-mobile-alt text-danger me-2"></i>Mobile Plans</h3>
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="text-danger mb-4">₹499<span class="fs-5">/month</span></h2>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Unlimited Calls</li>
+                                <li><i class="fas fa-check text-success me-2"></i>100GB Data</li>
+                                <li><i class="fas fa-check text-success me-2"></i>5G Access</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-danger w-100">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 pricing-card featured">
+                        <div class="card-header bg-danger text-white text-center">
+                            <h3 class="mb-0"><i class="fas fa-building text-white me-2"></i>Business Pro</h3>
+                            <span class="badge bg-light text-danger">Most Popular</span>
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="text-danger mb-4">₹999<span class="fs-5">/month</span></h2>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Unlimited Everything</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Priority 5G</li>
+                                <li><i class="fas fa-check text-success me-2"></i>24/7 Support</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Static IP</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-danger w-100">Get Business Pro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 pricing-card">
+                        <div class="card-header bg-light text-center">
+                            <h3 class="mb-0"><i class="fas fa-globe text-danger me-2"></i>Broadband</h3>
+                        </div>
+                        <div class="card-body text-center">
+                            <h2 class="text-danger mb-4">₹799<span class="fs-5">/month</span></h2>
+                            <ul class="list-unstyled mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>1Gbps Speed</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Unlimited Data</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Free Router</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-danger w-100">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 TelecomPro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
